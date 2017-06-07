@@ -1,0 +1,14 @@
+.App_container {
+  padding: 10px 10px 10px 10px;
+}
+
+.home{
+  float: right;
+}
+h1 {
+  display:inline-block;
+}
+
+.RepoText{
+  text-align: center;
+}
