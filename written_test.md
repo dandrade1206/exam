@@ -19,7 +19,7 @@ Please write your answer [here](./map.js)
 2. What is a React `component`?
 
 ---
-> Your answer here...
+its is a chunk of code that takes in props(data) and spits out (renders) UI.
 ---
 
 3. You can define a React component a few different ways, including (1) as a simple function or (2) as a class that extends the `Component` piece of the React library. How should you decide when to use which syntax?
@@ -37,7 +37,9 @@ Please write your answer [here](./map.js)
 ```
 
 ---
-> Your answer here...
+<div>
+    React.createElement('h1', null, "Hello Dojo");
+</div>
 ---
 
 5. Reverse an array. Write a function that accepts an array and returns *the same array* with the values reversed.
@@ -53,7 +55,7 @@ Please write your answer [here](./reverseArr.js)
 6. How does using the `new` keyword affect a function's behavior in JavaScript?
 
 ---
-> Your answer here...
+the 'new' keyword creates an object and returns the object.
 ---
 
 7. What is the best thing?
@@ -63,7 +65,7 @@ Please write your answer [here](./reverseArr.js)
 * D) Pushing to Github
 
 ---
-> Your answer here...
+D) when you have working code!
 ---
 
 Done! Time to start the [React app](./app-details.md)!
