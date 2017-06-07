@@ -44,14 +44,27 @@ class App extends Component {
     render() {
       const { repos } = this.props;
         return (
+          <Router> 
             <div className="App_container">
                 <h1>Github Viewer</h1>
                 <button className="home">Home</button>
                 <hr/>
-                  <UserForm onSubmit={this.handleSearchFormSubmit} />
-                  <RepoList users={this.state.users} repos={repos}/> 
-                  <RepoDetail repos={repos} />
+                    <Route path="/" render={(props) => {
+                        return <UserForm {...props} onSubmit={this.handleSearchFormSubmit} />
+                    
+                      }
+                    }
+                    />
+                  
+                  <RepoList repos={this.state.repos} repos={repos}/> 
+                  <Route path="/repos/:id" render={(props) => {
+                        if (this.state.users.length < 1) {
+                            return <Redirect to="/" />
+                        }
+                        return <RepoDetail repos={this.state.repos} />
+                    }} />
             </div>
+            </Router>
         )
     }
 }
